@@ -4,6 +4,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 /* Pick a theme of your choice */
 import original from "react95/dist/themes/original";
+import "./assets/css/style.css";
 
 /* Original Windows95 font (optional) */
 import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";

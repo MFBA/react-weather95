@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <AppBar>
-      <Toolbar style={{ justifyContent: "center" }}>
+      <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
         {/* <input list="brow" />
         <datalist id="brow">
           <option value="Internet Explorer" />
@@ -42,30 +42,33 @@ function Navbar() {
           onBlur={(e) => console.log("blur", e)}
           onFocus={(e) => console.log("focus", e)}
         /> */}
-
-        <TextInput
-          style={{
-            width: "20vw",
-          }}
-          placeholder="Search..."
-          width={150}
-          onChange={(e) => setInputCity(e.target.value)}
-          value={inputcity}
-        />
-
-        {inputcity[0] && (
-          <MenuList
+        <p className="nav-heading">Weather95</p>
+        <div>
+          <TextInput
             style={{
-              position: "absolute",
-              left: "38%",
-              top: "100%",
               width: "20vw",
+              marginRight: "7.483vw",
             }}
-            onClick={() => setInputCity(false)}
-          >
-            <MenuListItem>Moscow</MenuListItem>
-          </MenuList>
-        )}
+            placeholder="Search..."
+            width={150}
+            onChange={(e) => setInputCity(e.target.value)}
+            value={inputcity}
+          />
+
+          {inputcity[0] && (
+            <MenuList
+              style={{
+                position: "absolute",
+                left: "39.32vw",
+                top: "100%",
+                width: "20vw",
+              }}
+              onClick={() => setInputCity(false)}
+            >
+              <MenuListItem>Moscow</MenuListItem>
+            </MenuList>
+          )}
+        </div>
         <div style={{ position: "relative", display: "inline-block" }}>
           <Button onClick={() => setOpen(!open)} style={{ fontWeight: "bold" }}>
             Start

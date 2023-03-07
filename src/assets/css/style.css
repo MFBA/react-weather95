@@ -51,9 +51,36 @@ padding-bottom:30px;
   margin:20px;
 }
 
-.news-box {
+.news-scroll-container {
  width: 51.5vw;
  height: 20vw;
+}
+.news-module {
+  display: flex;
+
+}
+.news-box {
+  width:12.2vw;
+ height: 18.8vw;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding:7px;
+  
+}
+.news-image-box{
+  width: 12.2vw;
+  height: 8vw;
+  background-color: red;
+}
+.news-title {
+  font-size: 24px;
+  font-weight: 800;
+  overflow: hidden;
 }
 .forcast-container {
   margin-left:50px;

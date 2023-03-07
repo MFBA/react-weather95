@@ -32,3 +32,60 @@ body {
   /* text-transform: uppercase; */
   letter-spacing: 0.1rem;
 }
+
+
+.weather-container {
+  margin:50px;
+margin-right:20px;
+margin-bottom: 20px;
+margin-top:35px;
+padding-bottom:30px;
+
+}
+
+.weather-box {
+ width:36.5vw;
+ height: 20vw;
+}
+.news-container {
+  margin:20px;
+}
+
+.news-box {
+ width: 51.5vw;
+ height: 20vw;
+}
+.forcast-container {
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:0px;
+}
+
+.forcast-box {
+ width: 92.4vw;
+ height:15vw;
+}
+
+.temperature {
+  width: 35vw;
+  height: 13vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.temp-num{
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.weather-attr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-attr p {
+  font-size: 25px;
+  font-weight: bold;
+}

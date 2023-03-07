@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuList, MenuListItem, Separator, styleReset, Button } from "react95";
+import { styleReset } from "react95";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 /* Pick a theme of your choice */
@@ -12,6 +12,9 @@ import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
 
 import Navbar from "./components/Navbar";
 import NewsTicker from "./components/NewsTicker";
+import WeatherComponent from "./components/WeatherComponent";
+import NewsComponent from "./components/NewsComponent";
+import ForcastComponent from "./components/ForcastComponent";
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -36,15 +39,19 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
-  const array = [1, 2, 3, 456, 7];
   return (
     <div>
       <GlobalStyles />
       <ThemeProvider theme={original}>
-        <div style={{ height: "50px" }}>
+        <div style={{ height: "3.4vw" }}>
           <Navbar />
         </div>
         <NewsTicker />
+        <div>
+          <WeatherComponent />
+          <NewsComponent />
+          <ForcastComponent />
+        </div>
       </ThemeProvider>
     </div>
   );

@@ -5,12 +5,9 @@ import {
   Button,
   MenuList,
   MenuListItem,
-  Separator,
   TextInput,
   Toolbar,
-  Select,
 } from "react95";
-import styled from "styled-components";
 
 // import logoIMG from "../assets/images/logo.png";
 
@@ -42,7 +39,7 @@ function Navbar() {
           onBlur={(e) => console.log("blur", e)}
           onFocus={(e) => console.log("focus", e)}
         /> */}
-        <p className="nav-heading">Weather95</p>
+        <p className="nav-heading">Weather95 ☀️</p>
         <div>
           <TextInput
             style={{

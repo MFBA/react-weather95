@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const NewsTicker = () => {
   return (
-    <Marquee gradientWidth={0} style={{ zIndex: -2 }}>
+    <Marquee gradientWidth={0} style={{ zIndex: -2, fontWeight: "bold" }}>
       I can be a React component, multiple React components, or just some text.
     </Marquee>
   );
